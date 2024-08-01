@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+     <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="left">
+        <div class="logo">
+            <img src="6.png" alt="Petify Logo"> <!-- Add your logo image path here -->
+            <h1>Petify</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="links">
+            <a href="pages/shop.html">Shop</a>
+            
+            <a href="contactus.html">Contact Us</a>
+            <a href="#">Services</a>
+        </div>
+    </div>
+    <div class="right">
+       
+        
+        <div class="login">
+            <a href="pages/login.html"><i class="fa-solid fa-user"></i>Log In</a>
+        </div>
+        <!-- <div class="search">
+            <label for="search" >Search</label>
+            <input type="text" id="search">
+        </div> -->
+        <div class="cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="button">
+            <a href="pages/login.html">Connect with a Vet</a>
+        </div>
+    </div>
+</div>
+
+    <section class="hero">
+    </section>
+
+   
+
+ 
+
+
+    <div class="container mx-auto p-6">
+      <!-- Top Navigation -->
+      <div class="flex flex-col md:flex-row items-center justify-between mb-6">
+        <input type="text" placeholder="Search..." class="border border-[#8E7B70] rounded-xl p-2 mb-4 md:mb-0">
+        <select class="border border-gray-300 rounded-md p-2">
+          <option>Sort by</option>
+          <option>Price</option>
+          <option>Popularity</option>
+        </select>
+      </div>
+  
+      <!-- Sidebar and Products -->
+      <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <div class="w-full md:w-1/4 p-4 mb-6 md:mb-0">
+          <h2 class="font-semibold mb-2">Pet</h2>
+          <div>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Dog
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Cat
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Fish
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Bird
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Small Pet
+            </label>
+          </div>
+  
+          <h2 class="font-semibold mt-4 mb-2">Product type</h2>
+          <div>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Dry Food
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Wet Food
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Treats
+            </label>
+            <label class="block">
+              <input type="checkbox" class="mr-2"> Accessories
+            </label>
+          </div>
+  
+          <h2 class="font-semibold mt-4 mb-2">Price</h2>
+          <input type="range" min="0" max="100" class="w-full">
+        </div>
+  
+        <!-- Product Grid -->
+        <div class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <!-- Product Card -->
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="pngwing.com (10).png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+           <a href="product-page.html"> <h3 class="font-semibold mb-2 text-center">Product Name</h3> </a>
+            <p class="text-gray-500 mb-4 text-center">1.00 jd</p>
+          <a href="cart.html"> <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button> </a> 
+          </div>
+  
+          <!-- Repeat Product Card for each product -->
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_2283980.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+  
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_3740431.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+  
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_2283980.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+  
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_3740431.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_2283980.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+  
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_3740431.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_2283980.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+  
+          <div class="border border-gray-200 rounded-lg p-4 bg-white flex flex-col items-center">
+            <img src="PngItem_3740431.png" alt="Product Image" class="w-full h-48 object-contain mb-4">
+            <h3 class="font-semibold mb-2 text-center">Product Name</h3>
+            <p class="text-gray-500 mb-4 text-center">$12.00</p>
+            <button class="bg-[#8E7B70] text-white rounded-md px-4 py-2">Add to Cart</button>
+          </div>
+          
+  
+        </div>
+      </div>
+  
+      <!-- Pagination -->
+      <div class="flex justify-center mt-6 ">
+        <button class="border border-gray-300 rounded-md px-4 py-2 mr-2">1</button>
+        <button class="border border-gray-300 rounded-md px-4 py-2 mr-2">2</button>
+        <button class="border border-gray-300 rounded-md px-4 py-2">3</button>
+       
+      </div>
+    </div>
+
+  </body>
+</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>

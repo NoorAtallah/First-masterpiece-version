@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-family:'Poppins' ;
+    
+}
+
+body {
+  cursor: url('1 (2).png'), auto;
+}
+
+
+.hero {
+    background-image: url('2.png');
+    background-size: 100%;
+    background-color: #8E7B70;
+            background-position: bottom; /* Centers the image */
+            image-rendering: optimizeQuality; /* For non-blurry rendering on non-retina displays */
+  
+            background-repeat: no-repeat;
+            height: 100vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9ccc5;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .left, .navbar .right {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  height: 5rem;
+  margin-right: 0;
+}
+.navbar .logo h1 {
+  margin-right: 50px ;
+  font-size: 24px;
+}
+.navbar .links a {
+  margin: 30px 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  
+}
+.navbar .links a:hover {
+  text-decoration: underline;
+}
+.navbar .right .lang, .navbar .right .help {
+  margin: 0 15px;
+}
+.navbar .right .lang select, .navbar .right .search input {
+  padding: 5px;
+  font-size: 14px;
+}
+.navbar .right .search {
+  display: flex;
+  align-items: center;
+ 
+}
+.navbar .right .search input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.navbar .right .login, .navbar .right .cart {
+  margin-left: 15px;
+}
+
+.login a{
+  text-decoration: none;
+  margin: .9rem;
+  color: black;
+
+}
+
+.login i{
+  margin: 0.5rem;
+}
+.navbar .right .button a {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.navbar button:hover{
+  background-color: #E8E1DA;
+}
+.cart a i{
+  color: black;
+  margin: .9rem;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+      height: 60vh; /* Adjust height for smaller screens */
+      min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 30vh; /* Adjust height for the smallest screens */
+      min-height: 200px;
+  }
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+ }
+ 
+ .input::placeholder {
+  color: #9e9ea7;
+ }
+ 
+ .input:focus, input:hover {
+  outline: none;
+  border-color: rgba(234,76,137,0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+ }
+ 
+ .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+ }
+ 
+ 
+ 
+ 
+ 
+ 

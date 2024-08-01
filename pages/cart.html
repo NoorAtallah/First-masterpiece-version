@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.product-image {
+  width: 150px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.quantity {
+  margin-right: 10px;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.proceed-button {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d9ccc5;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 5rem;
+            margin-right: 10px;
+        }
+        .navbar .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .navbar .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .navbar .links a:hover {
+            text-decoration: underline;
+        }
+        .navbar .right .lang, .navbar .right .help {
+            margin: 0 15px;
+        }
+        .navbar .right .lang select, .navbar .right .search input {
+            padding: 5px;
+            font-size: 14px;
+        }
+        .navbar .right .search {
+            display: flex;
+            align-items: center;
+           
+        }
+        .navbar .right .search input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .navbar .right .login, .navbar .right .cart {
+            margin-left: 15px;
+        }
+
+        .login a{
+            text-decoration: none;
+            margin: .9rem;
+            color: black;
+
+        }
+
+        .login i{
+            margin: 0.5rem;
+        }
+        .navbar .right .button a {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        .navbar button:hover{
+            background-color: #E8E1DA;
+        }
+        .cart a i{
+            color: black;
+            margin: .9rem;
+        }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <div class="logo">
+                <img src="../2.png" alt="Petify Logo"> <!-- Add your logo image path here -->
+                <h1>Petify</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="links">
+                <a href="shop.html">Shop</a>
+                
+                <a href="pages/shop.html">Pharmacy</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <div class="right">
+           
+            
+            <div class="login">
+                <a href="pages/login.html"><i class="fa-solid fa-user"></i>Log In</a>
+            </div>
+            <!-- <div class="search">
+                <label for="search" >Search</label>
+                <input type="text" id="search">
+            </div> -->
+            <div class="cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="button">
+                <a href="pages/login.html">Connect with a Vet</a>
+            </div>
+        </div>
+    </div>
+<div class="container">
+  <h1 style="text-align: left;">Shopping Cart</h1>
+<hr>
+  <div class="product">
+    <img src="PngItem_3967835.png" alt="Product Image" class="product-image">
+    <div class="product-details">
+      <div class="product-name">Premium Dog Food for Urinary Care</div>
+      <div class="product-price">1.25 JD</div>
+      <div class="quantity">
+        Quantity:
+        <input type="number" class="quantity-input" value="5">
+      </div>
+    </div>
+  </div>
+  
+
+  <button class="button proceed-button">Proceed to Checkout</button>
+  <button class="button remove-button">Remove</button>
+  <div class="product">
+    <img src="pngwing.com (8).png" alt="Product Image" class="product-image">
+    <div class="product-details">
+      <div class="product-name">Premium Dog Food for Urinary Care</div>
+      <div class="product-price">1.25 JD</div>
+      <div class="quantity">
+        Quantity:
+        <input type="number" class="quantity-input" value="5">
+      </div>
+    </div>
+  </div>
+  
+
+  <button class="button proceed-button">Proceed to Checkout</button>
+  <button class="button remove-button">Remove</button>
+
+  <div class="product">
+    <img src="PngItem_5691048.png" alt="Product Image" class="product-image">
+    <div class="product-details">
+      <div class="product-name">Premium Dog Food for Urinary Care</div>
+      <div class="product-price">1.25 JD</div>
+      <div class="quantity">
+        Quantity:
+        <input type="number" class="quantity-input" value="5">
+      </div>
+    </div>
+  </div>
+  
+
+  <button class="button proceed-button">Proceed to Checkout</button>
+  <button class="button remove-button">Remove</button>
+  <div class="product">
+    <img src="PngItem_3971109.png" alt="Product Image" class="product-image">
+    <div class="product-details">
+      <div class="product-name">Premium Dog Food for Urinary Care</div>
+      <div class="product-price">1.25 JD</div>
+      <div class="quantity">
+        Quantity:
+        <input type="number" class="quantity-input" value="5">
+      </div>
+    </div>
+  </div>
+  
+
+  <button class="button proceed-button">Proceed to Checkout</button>
+  <button class="button remove-button">Remove</button>
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
